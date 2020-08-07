@@ -167,7 +167,7 @@ class NotEmptyContainer extends ViewModelWidget<HistoryViewModel> {
       itemBuilder: (context, index) {
         return InkWell(
           onTap: () {
-            model.onTapContainerData();
+            model.onTapContainerData(model.flightDatas[index]);
           },
           child: Container(
             width: double.infinity,
