@@ -52,7 +52,7 @@ class HistoryView extends StatelessWidget {
 }
 
 class DateDropDownButton extends ViewModelWidget<HistoryViewModel> {
-  const DateDropDownButton({Key key}) : super(key: key);
+  const DateDropDownButton({Key key}) : super(key: key, reactive: true);
 
   @override
   Widget build(BuildContext context, HistoryViewModel model) {

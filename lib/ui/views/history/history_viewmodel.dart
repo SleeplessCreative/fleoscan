@@ -75,13 +75,14 @@ class HistoryViewModel extends BaseViewModel {
     setIsThereData(false);
     setIsDateChoosen(false);
     setIsFlightChoosen(false);
+    notifyListeners();
     getBasicDataList();
   }
 
   Future getBasicDataList() async {
     setFlightDatas(await _databaseService.getFlightData());
     setFlightDateList(await _databaseService.getFlightDateList());
-    if (_flightDatas != null) {
+    if (_flightDatas != null && _flightDatas.length != 0) {
       setIsThereData(true);
     }
     notifyListeners();
@@ -103,12 +104,14 @@ class HistoryViewModel extends BaseViewModel {
     setChoosenDate(value);
     setChoosenFlight(null);
     setIsDateChoosen(true);
+    notifyListeners();
     getFlightList(_choosenDate);
   }
 
   void onChangedFlightList(dynamic value) {
     setChoosenFlight(value);
     setIsFlightChoosen(true);
+    notifyListeners();
     getFilteredDataList(_choosenDate, _choosenFlight);
   }
 
