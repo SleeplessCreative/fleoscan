@@ -1,16 +1,25 @@
-# fleoscan
+# Fleoscan
+![fleoscan](https://i.ibb.co/BcR0jJG/Group-41.png)
 
-Pemindai barcode tiket pesawat.
+Aplikasi pemindai barcode tiket pesawat.
 
-## Getting Started
+## Images
 
-This project is a starting point for a Flutter application.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-A few resources to get you started if this is your first Flutter project:
+## Built With
+* [Flutter](http://www.dropwizard.io/1.0.2/docs/) - Android Software Development Kit 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Authors
+* **M Erald Setyaki S** - *Architecture, Back-End* - [GitHub](https://github.com/eraldss1)
+* **Arridho Pradana** - *Front-End, UI/UX* - [Github](https://github.com/arridhow)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
