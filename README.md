@@ -3,10 +3,6 @@
 
 Aplikasi pemindai barcode tiket pesawat.
 
-## Images
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ## Built With
 * [Flutter](http://www.dropwizard.io/1.0.2/docs/) - Android Software Development Kit 
 
@@ -14,12 +10,11 @@ These instructions will get you a copy of the project up and running on your loc
 * **M Erald Setyaki S** - *Architecture, Back-End* - [GitHub](https://github.com/eraldss1)
 * **Arridho Pradana** - *Front-End, UI/UX* - [Github](https://github.com/arridhow)
 
+## Images
+![ss1](https://i.ibb.co/p4sHsqH/Screenshot-20200807-002125.png)
+![ss2](https://i.ibb.co/F3Yd98R/Screenshot-20200807-002246.png)
+![ss3](https://i.ibb.co/hLKsB48/Screenshot-20200807-002251.png)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+This project is licensed under the MIT License.
+--belum selesai.
