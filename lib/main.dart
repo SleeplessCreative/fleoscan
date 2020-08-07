@@ -23,7 +23,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(fontFamily: 'Montserrat'),
+      theme: ThemeData(
+        fontFamily: 'Montserrat',
+      ),
       initialRoute: Routes.homeView,
       onGenerateRoute: Router().onGenerateRoute,
       navigatorKey: locator<NavigationService>().navigatorKey,
