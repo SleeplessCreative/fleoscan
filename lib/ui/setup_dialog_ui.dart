@@ -38,7 +38,7 @@ void setupDialogUi() {
                 Expanded(
                   child: FlatButton(
                     child: Icon(
-                      Icons.close,
+                      Icons.arrow_back,
                       color: FleoColor.c400(),
                     ),
                     onPressed: () => dialogService
@@ -48,7 +48,7 @@ void setupDialogUi() {
                 Expanded(
                   child: FlatButton(
                     child: Icon(
-                      Icons.check,
+                      Icons.refresh,
                       color: FleoColor.c800(),
                     ),
                     onPressed: () => dialogService
