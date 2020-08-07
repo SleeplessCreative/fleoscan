@@ -26,10 +26,12 @@ class EndDrawerViewModel extends BaseViewModel {
   }
 
   Future navigateToHistory() async {
+    _navigationService.popRepeated(1);
     await _navigationService.clearTillFirstAndShow(Routes.historyView);
   }
 
   Future navigateToAbout() async {
+    _navigationService.popRepeated(1);
     await _navigationService.clearTillFirstAndShow(Routes.aboutView);
   }
 }
