@@ -15,9 +15,9 @@ class HistoryViewModel extends BaseViewModel {
   List<FlightData> _flightDatas;
   List<String> _flightDateList;
   List<String> _flightList;
-  bool _isThereData = false;
-  bool _isDateChoosen = false;
-  bool _isFlightChoosen = false;
+  bool _isThereData;
+  bool _isDateChoosen;
+  bool _isFlightChoosen;
   String _choosenDate;
   String _choosenFlight;
 
@@ -72,6 +72,9 @@ class HistoryViewModel extends BaseViewModel {
 
 // Viewmodel Function
   initialise() {
+    setIsThereData(false);
+    setIsDateChoosen(false);
+    setIsFlightChoosen(false);
     getBasicDataList();
   }
 
@@ -117,7 +120,6 @@ class HistoryViewModel extends BaseViewModel {
     if (response.confirmed) {
       await _databaseService.clearDb();
       setIsThereData(false);
-      _navigationService.popRepeated(1);
       notifyListeners();
     } else {
       _navigationService.popRepeated(1);
