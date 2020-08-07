@@ -10,6 +10,6 @@ class NavigationBarViewModel extends BaseViewModel {
 
   final NavigationService _navigationService = locator<NavigationService>();
   Future navigateToScan() async {
-    await _navigationService.navigateTo(Routes.scanView);
+    await _navigationService.clearTillFirstAndShow(Routes.scanView);
   }
 }

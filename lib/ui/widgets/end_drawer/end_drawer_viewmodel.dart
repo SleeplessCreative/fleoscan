@@ -9,14 +9,9 @@ class EndDrawerViewModel extends BaseViewModel {
   Image _endDrawerHeaderImage = Image.asset('assets/logo-ap2.png');
   Image get endDrawerHeaderImage => _endDrawerHeaderImage;
 
-  String _endDrawerItemText1 = 'BERANDA';
-  String get endDrawerItemText1 => _endDrawerItemText1;
-
-  String _endDrawerItemText2 = 'RIWAYAT';
-  String get endDrawerItemText2 => _endDrawerItemText2;
-
-  String _endDrawerItemText3 = 'TENTANG';
-  String get endDrawerItemText3 => _endDrawerItemText3;
+  String get endDrawerItemText1 => 'BERANDA';
+  String get endDrawerItemText2 => 'RIWAYAT';
+  String get endDrawerItemText3 => 'TENTANG';
 
   TextStyle _endDrawerItemTextStyle = TextStyle(
     fontSize: 16.0,
