@@ -1,7 +1,7 @@
 import 'package:fleoscan/app/locator.dart';
-import 'package:fleoscan/app/router.gr.dart';
 import 'package:fleoscan/datamodels/flight_data.dart';
 import 'package:fleoscan/services/database_service.dart';
+import 'package:fleoscan/ui/views/history/show_item/show_item_view.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
@@ -129,7 +129,9 @@ class HistoryViewModel extends BaseViewModel {
     }
   }
 
-  Future onTapContainerData() async {
-    await _navigationService.navigateTo(Routes.showItemView);
+  Future onTapContainerData(FlightData value) async {
+    await _navigationService.navigateToView(ShowItemView(
+      passData: value,
+    ));
   }
 }
