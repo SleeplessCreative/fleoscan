@@ -52,6 +52,7 @@ class FlightData {
         this.cabinClass = '-',
         this.seatNumber = '-',
         this.sequenceNumber = '';
+
 // Getter
   int get getId => id;
   String get getName => name;
