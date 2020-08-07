@@ -1,6 +1,6 @@
 import 'package:barcode_scan/barcode_scan.dart';
-import 'package:Fleoscan/datamodels/flight_data.dart';
-import 'package:Fleoscan/services/parsing_result_service.dart';
+import 'package:fleoscan/datamodels/flight_data.dart';
+import 'package:fleoscan/services/parsing_result_service.dart';
 import 'package:injectable/injectable.dart';
 
 @lazySingleton

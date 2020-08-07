@@ -1,4 +1,4 @@
-import 'package:Fleoscan/items/fleocolor.dart';
+import 'package:fleoscan/items/fleocolor.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 

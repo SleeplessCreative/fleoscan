@@ -1,5 +1,5 @@
-import 'package:Fleoscan/app/locator.dart';
-import 'package:Fleoscan/ui/setup_dialog_ui.dart';
+import 'package:fleoscan/app/locator.dart';
+import 'package:fleoscan/ui/setup_dialog_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:stacked_services/stacked_services.dart';

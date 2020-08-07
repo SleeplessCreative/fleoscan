@@ -1,5 +1,5 @@
-import 'package:Fleoscan/app/locator.dart';
-import 'package:Fleoscan/items/fleocolor.dart';
+import 'package:fleoscan/app/locator.dart';
+import 'package:fleoscan/items/fleocolor.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked_services/stacked_services.dart';
 

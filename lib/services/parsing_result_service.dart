@@ -1,8 +1,8 @@
-import 'package:Fleoscan/datamodels/flight_data.dart';
-import 'package:Fleoscan/items/airlines.dart';
-import 'package:Fleoscan/items/airports.dart';
-import 'package:Fleoscan/items/cabins.dart';
-import 'package:Fleoscan/items/months.dart';
+import 'package:fleoscan/datamodels/flight_data.dart';
+import 'package:fleoscan/items/airlines.dart';
+import 'package:fleoscan/items/airports.dart';
+import 'package:fleoscan/items/cabins.dart';
+import 'package:fleoscan/items/months.dart';
 
 class ParseResult {
   final String s;
