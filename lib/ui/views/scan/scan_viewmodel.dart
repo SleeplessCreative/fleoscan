@@ -1,6 +1,7 @@
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:fleoscan/app/locator.dart';
 import 'package:fleoscan/datamodels/flight_data.dart';
+import 'package:fleoscan/services/database_service.dart';
 import 'package:fleoscan/services/scan_service.dart';
 import 'package:fleoscan/ui/dialog_type.dart';
 import 'package:flutter/services.dart';
@@ -11,6 +12,7 @@ class ScanViewModel extends BaseViewModel {
   final ScanService _scanService = locator<ScanService>();
   final DialogService _dialogService = locator<DialogService>();
   final NavigationService _navigationService = locator<NavigationService>();
+  final DatabaseService _databaseService = locator<DatabaseService>();
 
   String get nameText => 'NAMA';
   String get fromText => 'ASAL';
@@ -25,11 +27,11 @@ class ScanViewModel extends BaseViewModel {
   String _errorMesage;
   String get errorMessage => _errorMesage;
 
-  FlightData _data = new FlightData.initial();
-  FlightData get data => _data;
+  FlightData _flightData = new FlightData.initial();
+  FlightData get data => _flightData;
 
-  void setData(FlightData data) {
-    _data = data;
+  void setData(FlightData flightData) {
+    _flightData = flightData;
     notifyListeners();
   }
 
@@ -59,6 +61,11 @@ class ScanViewModel extends BaseViewModel {
     }
     if (_scanned) {
       setData(result);
+      bool duplicate =
+          await _databaseService.checkDuplicate(_flightData.getName);
+      if (!duplicate) {
+        _databaseService.save(_flightData);
+      }
     } else {
       errorDialog(_errorMesage);
     }
