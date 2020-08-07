@@ -1,6 +1,5 @@
 import 'package:fleoscan/items/fleocolor.dart';
 import 'package:fleoscan/ui/widgets/appbar/appbar_view.dart';
-import 'package:fleoscan/ui/widgets/end_drawer/end_drawer_view.dart';
 import 'package:fleoscan/ui/widgets/navigation_bar/navigation_bar_view.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
@@ -22,7 +21,6 @@ class ScanView extends StatelessWidget {
               bottomNavigationBar: NavigationBarView(
                 height: 110,
               ),
-              endDrawer: EndDrawerView(),
               body: Container(
                 width: double.infinity,
                 height: double.infinity,
