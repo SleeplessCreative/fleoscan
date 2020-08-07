@@ -90,6 +90,7 @@ class HistoryViewModel extends BaseViewModel {
 
   Future getFlightList(String choosenDate) async {
     setFlightList(await _databaseService.getFlightList(choosenDate));
+    notifyListeners();
   }
 
   Future getFilteredDataList(String _choosenDate, String _choosenFlight) async {
