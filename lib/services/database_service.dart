@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:io' as io;
-import 'package:fleoscan/datamodels/flight_data.dart';
+import 'package:Fleoscan/datamodels/flight_data.dart';
 import 'package:injectable/injectable.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';

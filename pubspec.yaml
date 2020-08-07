@@ -1,4 +1,4 @@
-name: fleoscan
+name: Fleoscan
 description: Pemindai barcode tiket pesawat.
 
 # The following line prevents the package from being accidentally published to

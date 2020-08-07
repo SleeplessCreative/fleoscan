@@ -1,6 +1,6 @@
-import 'package:fleoscan/app/locator.dart';
-import 'package:fleoscan/app/router.gr.dart';
-import 'package:fleoscan/items/fleocolor.dart';
+import 'package:Fleoscan/app/locator.dart';
+import 'package:Fleoscan/app/router.gr.dart';
+import 'package:Fleoscan/items/fleocolor.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
