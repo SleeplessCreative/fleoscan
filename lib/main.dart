@@ -1,4 +1,5 @@
 import 'package:fleoscan/app/locator.dart';
+import 'package:fleoscan/services/analytics_service.dart';
 import 'package:fleoscan/ui/setup_dialog_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -22,13 +23,16 @@ class MyApp extends StatelessWidget {
     ));
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Fleoscan',
       theme: ThemeData(
         fontFamily: 'Montserrat',
       ),
       initialRoute: Routes.homeView,
       onGenerateRoute: Router().onGenerateRoute,
       navigatorKey: locator<NavigationService>().navigatorKey,
+      navigatorObservers: [
+        locator<AnalyticsService>().getAnalyticsObserver(),
+      ],
     );
   }
 }
