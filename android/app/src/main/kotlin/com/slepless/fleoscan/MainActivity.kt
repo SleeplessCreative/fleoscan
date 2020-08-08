@@ -1,4 +1,4 @@
-package com.slepless.fleoscan
+package com.sleepless.fleoscan
 
 import io.flutter.embedding.android.FlutterActivity
 
