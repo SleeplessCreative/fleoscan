@@ -9,6 +9,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
+import '../datamodels/flight_data.dart';
 import '../ui/views/about/about_view.dart';
 import '../ui/views/history/history_view.dart';
 import '../ui/views/history/show_item/show_item_view.dart';
@@ -62,8 +63,14 @@ class Router extends RouterBase {
       );
     },
     ShowItemView: (data) {
+      final args = data.getArgs<ShowItemViewArguments>(
+        orElse: () => ShowItemViewArguments(),
+      );
       return MaterialPageRoute<dynamic>(
-        builder: (context) => const ShowItemView(),
+        builder: (context) => ShowItemView(
+          key: args.key,
+          passData: args.passData,
+        ),
         settings: data,
       );
     },
@@ -74,4 +81,15 @@ class Router extends RouterBase {
       );
     },
   };
+}
+
+/// ************************************************************************
+/// Arguments holder classes
+/// *************************************************************************
+
+/// ShowItemView arguments holder class
+class ShowItemViewArguments {
+  final Key key;
+  final FlightData passData;
+  ShowItemViewArguments({this.key, this.passData});
 }
