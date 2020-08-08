@@ -1,7 +1,9 @@
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:fleoscan/app/locator.dart';
 import 'package:fleoscan/datamodels/flight_data.dart';
+import 'package:fleoscan/services/analytics_service.dart';
 import 'package:fleoscan/services/database_service.dart';
+import 'package:fleoscan/services/device_info_services.dart';
 import 'package:fleoscan/services/scan_service.dart';
 import 'package:fleoscan/ui/dialog_type.dart';
 import 'package:flutter/services.dart';
@@ -13,6 +15,8 @@ class ScanViewModel extends BaseViewModel {
   final DialogService _dialogService = locator<DialogService>();
   final NavigationService _navigationService = locator<NavigationService>();
   final DatabaseService _databaseService = locator<DatabaseService>();
+  final AnalyticsService _analyticsService = locator<AnalyticsService>();
+  final DeviceInfoService _deviceInfoService = locator<DeviceInfoService>();
 
   String get nameText => 'NAMA';
   String get fromText => 'ASAL';
@@ -20,6 +24,8 @@ class ScanViewModel extends BaseViewModel {
   String get dateText => 'TANGGAL';
   String get seatText => 'TEMPAT DUDUK';
   String get flightText => 'NOMOR PENERBANGAN';
+
+  List<String> deviceInfo;
 
   bool _scanned = true;
   bool get scanned => _scanned;
@@ -36,6 +42,7 @@ class ScanViewModel extends BaseViewModel {
   }
 
   initialise() {
+    getDeviceInfo();
     getScanParsedResult();
   }
 
@@ -60,6 +67,8 @@ class ScanViewModel extends BaseViewModel {
       _errorMesage = 'Error tidak dikenal!\n$ex';
     }
     if (_scanned) {
+      logScanResult(
+          '${result.getName} ${result.getFlightNumber} ${result.getSeatNumber}');
       setData(result);
       bool duplicate =
           await _databaseService.checkDuplicate(_flightData.getName);
@@ -67,6 +76,7 @@ class ScanViewModel extends BaseViewModel {
         _databaseService.save(_flightData);
       }
     } else {
+      logScanResult(_errorMesage);
       errorDialog(_errorMesage);
     }
   }
@@ -80,6 +90,19 @@ class ScanViewModel extends BaseViewModel {
       await getScanParsedResult();
     } else {
       _navigationService.popUntil((route) => route.isFirst);
+    }
+  }
+
+  getDeviceInfo() async {
+    deviceInfo = await _deviceInfoService.deviceDetails;
+    _analyticsService.setUserProperties(userId: deviceInfo[0].toString());
+  }
+
+  logScanResult(String s) {
+    if (_scanned) {
+      _analyticsService.logScanSuccess(scanResult: s);
+    } else {
+      _analyticsService.logScanFailed(errorMessage: s);
     }
   }
 }
