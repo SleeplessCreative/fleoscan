@@ -124,6 +124,8 @@ class HistoryViewModel extends BaseViewModel {
     if (response.confirmed) {
       await _databaseService.clearDb();
       setIsThereData(false);
+      setChoosenDate(null);
+      setChoosenFlight(null);
       notifyListeners();
     } else {
       _navigationService.popRepeated(1);
