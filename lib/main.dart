@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarColor: FleoColor.c300(),
+      systemNavigationBarColor: Colors.white,
       statusBarIconBrightness: Brightness.dark,
     ));
     return MaterialApp(
