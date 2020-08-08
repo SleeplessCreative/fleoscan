@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "669504458090",
+    "firebase_url": "https://fleoscan-app.firebaseio.com",
+    "project_id": "fleoscan-app",
+    "storage_bucket": "fleoscan-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669504458090:android:ba62b9867521c6c744a913",
+        "android_client_info": {
+          "package_name": "com.sleepless.fleoscan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669504458090-5gqep7404s1pmrtm58lkr06i0os2dls9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd5BBhKuggcXRV8S3Ge1yCTZ0ypyOp1xk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669504458090-5gqep7404s1pmrtm58lkr06i0os2dls9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
