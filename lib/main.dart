@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:stacked_services/stacked_services.dart';
 
-import 'app/router.gr.dart';
+import 'app/router.gr.dart' as rtr;
 import 'items/fleocolor.dart';
 
 void main() {
@@ -27,8 +27,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Montserrat',
       ),
-      initialRoute: Routes.homeView,
-      onGenerateRoute: Router().onGenerateRoute,
+      initialRoute: rtr.Routes.homeView,
+      onGenerateRoute: rtr.Router().onGenerateRoute,
       navigatorKey: locator<NavigationService>().navigatorKey,
       navigatorObservers: [
         locator<AnalyticsService>().getAnalyticsObserver(),
