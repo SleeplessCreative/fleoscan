@@ -163,62 +163,95 @@ class NotEmptyContainer extends ViewModelWidget<HistoryViewModel> {
   @override
   Widget build(BuildContext context, HistoryViewModel model) {
     return ListView.builder(
-      itemCount: model.flightDatas.length,
+      itemCount: model.flightNumber.length,
       itemBuilder: (context, index) {
-        return InkWell(
-          onTap: () {
-            model.onTapContainerData(model.flightDatas[index]);
-          },
-          child: Container(
-            width: double.infinity,
-            alignment: Alignment.centerLeft,
-            color: Colors.white,
-            padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 30),
-            margin: EdgeInsets.symmetric(vertical: 7),
-            child: Column(
-              children: <Widget>[
-                Container(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    model.flightDatas[index].getName,
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w500,
-                      color: FleoColor.c400(),
-                    ),
+        return Container(
+          margin: EdgeInsets.fromLTRB(0, 5, 0, 15),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                padding: EdgeInsets.symmetric(vertical: 5, horizontal: 30.0),
+                child: Text(
+                  model.flightNumber[index],
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.w600,
+                    color: FleoColor.c400(),
                   ),
                 ),
-                Row(
-                  children: <Widget>[
-                    Expanded(
-                      child: Container(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          '${model.flightDatas[index].getFromAirportCode} - ${model.flightDatas[index].getToAirportCode}',
-                          style: TextStyle(
-                            fontSize: 12.0,
-                            color: FleoColor.c400(),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        alignment: Alignment.centerRight,
-                        child: Text(
-                          '${model.flightDatas[index].getFlightDate}',
-                          style: TextStyle(
-                            fontSize: 12.0,
-                            fontWeight: FontWeight.w300,
-                            color: FleoColor.c400(),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
+              ),
+              Container(
+                child: Column(
+                  children: model.flightDatas?.map((data) {
+                        if (data.getFlightNumber == model.flightNumber[index]) {
+                          print(data.getName);
+                          return new Container(
+                            child: InkWell(
+                              onTap: () {
+                                model.onTapContainerData(data);
+                              },
+                              child: Container(
+                                width: double.infinity,
+                                alignment: Alignment.centerLeft,
+                                color: Colors.white,
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 30.0, vertical: 30),
+                                margin: EdgeInsets.symmetric(vertical: 3),
+                                child: Column(
+                                  children: <Widget>[
+                                    Container(
+                                      alignment: Alignment.centerLeft,
+                                      child: Text(
+                                        data.getName,
+                                        style: TextStyle(
+                                          fontSize: 16.0,
+                                          fontWeight: FontWeight.w500,
+                                          color: FleoColor.c400(),
+                                        ),
+                                      ),
+                                    ),
+                                    Row(
+                                      children: <Widget>[
+                                        Expanded(
+                                          child: Container(
+                                            alignment: Alignment.centerLeft,
+                                            child: Text(
+                                              '${data.getFromAirportCode} - ${data.getToAirportCode}',
+                                              style: TextStyle(
+                                                fontSize: 12.0,
+                                                color: FleoColor.c400(),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            alignment: Alignment.centerRight,
+                                            child: Text(
+                                              '${data.getFlightDate}',
+                                              style: TextStyle(
+                                                fontSize: 12.0,
+                                                fontWeight: FontWeight.w300,
+                                                color: FleoColor.c400(),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          );
+                        } else
+                          return new Container();
+                      })?.toList() ??
+                      [],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         );
       },
