@@ -85,31 +85,13 @@ class DatabaseService {
   //   return flightDatas;
   // }
 
-  Future<int> delete(int id) async {
-    var dbClient = await db;
-    return await dbClient.delete(TABLE, where: '$ID = ?', whereArgs: [id]);
-  }
-
-  Future<int> update(FlightData flightData) async {
-    var dbClient = await db;
-    return await dbClient.update(TABLE, flightData.toMap(),
-        where: '$ID = ?', whereArgs: [flightData.id]);
-  }
-
   Future close() async {
     var dbClient = await db;
     dbClient.close();
   }
 
-  Future clearDb() async {
-    var dbClient = await db;
-    return dbClient.delete(TABLE);
-  }
-
-  //================
-  //-Custom function
-  //================
-  //--Untuk cek duplikat di database, return boolean
+//Custom function
+  /// Duplicate check
   Future<bool> checkDuplicate(String check) async {
     var dbClient = await db;
     List<Map> maps = await dbClient.rawQuery('''
@@ -121,7 +103,7 @@ class DatabaseService {
       return false;
   }
 
-  //--Untuk fetch tanggal penerbangan yang pernah discan, return Array String
+  /// Get list of date available on table
   Future<List<String>> getDateList() async {
     var dbClient = await db;
     List<Map> maps = await dbClient.rawQuery('''
@@ -137,12 +119,12 @@ class DatabaseService {
     return dateList;
   }
 
-  //--Untuk fetch kode penerbangan sesuai tanggal, return Array String
-  Future<List<String>> getFlightList(String _flightDate) async {
+  /// Get list of flight at choosenDate
+  Future<List<String>> getFlightList(String choosenDate) async {
     var dbClient = await db;
     List<Map> maps = await dbClient.rawQuery('''
       SELECT * FROM $TABLE 
-      WHERE $FLIGHTDATE='$_flightDate' 
+      WHERE $FLIGHTDATE='$choosenDate' 
       GROUP BY $FLIGHTNUMBER  
     ''');
     List<String> flightList = [];
@@ -154,7 +136,7 @@ class DatabaseService {
     return flightList;
   }
 
-  //--Untuk fetch kode penerbangan sesuai tanggal, return Array String
+  /// Get all available Flight Number
   Future<List<String>> getFlightListNoDate() async {
     var dbClient = await db;
     List<Map> maps = await dbClient.rawQuery('''
@@ -170,13 +152,14 @@ class DatabaseService {
     return flightList;
   }
 
-  //--Untuk fetch data history sesuai dengan tanggal dan kode penerbangan
+  /// Get data for listview
+  //// Get data with choosenDate and choosenFlight
   Future<List<FlightData>> getDateFlightData(
-      String _flightDate, String _flightNumber) async {
+      String choosenDate, String choosenFlight) async {
     var dbClient = await db;
     List<Map> maps = await dbClient.rawQuery('''
       SELECT * FROM $TABLE 
-      WHERE $FLIGHTDATE='$_flightDate' AND $FLIGHTNUMBER='$_flightNumber'
+      WHERE $FLIGHTDATE='$choosenDate' AND $FLIGHTNUMBER='$choosenFlight'
       ORDER BY $NAME ASC   
     ''');
     List<FlightData> flightDatas = [];
@@ -188,12 +171,12 @@ class DatabaseService {
     return flightDatas;
   }
 
-  //--Untuk fetch data history sesuai dengan tanggal
-  Future<List<FlightData>> getDateData(String _flightDate) async {
+//// Get data with choosenDate
+  Future<List<FlightData>> getDateData(String choosenDate) async {
     var dbClient = await db;
     List<Map> maps = await dbClient.rawQuery('''
       SELECT * FROM $TABLE 
-      WHERE $FLIGHTDATE='$_flightDate'
+      WHERE $FLIGHTDATE='$choosenDate'
       ORDER BY $NAME ASC   
     ''');
     List<FlightData> flightDatas = [];
@@ -205,7 +188,7 @@ class DatabaseService {
     return flightDatas;
   }
 
-// sesuai dengan flight
+//// Get data with choosenFlight
   Future<List<FlightData>> getFlightData(String choosenFlight) async {
     var dbClient = await db;
     List<Map> maps = await dbClient.rawQuery('''
@@ -222,7 +205,7 @@ class DatabaseService {
     return flightDatas;
   }
 
-  //--Untuk fetch data history
+  //// Get data with
   Future<List<FlightData>> getData() async {
     var dbClient = await db;
     List<Map> maps = await dbClient.rawQuery('''
@@ -236,5 +219,42 @@ class DatabaseService {
       }
     }
     return flightDatas;
+  }
+
+  /// Delete row in table
+  //// Delete by choosenDate and choosenFlight
+  Future clearDbDateFlight(String choosenDate, String choosenFlight) async {
+    var dbClient = await db;
+    return dbClient.delete(
+      TABLE,
+      where: '$FLIGHTDATE=? AND $FLIGHTNUMBER=?',
+      whereArgs: ['$choosenDate', '$choosenFlight'],
+    );
+  }
+
+//// Delete by choosenDate
+  Future clearDbDate(String choosenDate) async {
+    var dbClient = await db;
+    return dbClient.delete(
+      TABLE,
+      where: '$FLIGHTDATE=?',
+      whereArgs: ['$choosenDate'],
+    );
+  }
+
+//// Delete by choosenFlight
+  Future clearDbFlight(String choosenFlight) async {
+    var dbClient = await db;
+    return dbClient.delete(
+      TABLE,
+      where: '$FLIGHTNUMBER=?',
+      whereArgs: ['$choosenFlight'],
+    );
+  }
+
+//// Delete All
+  Future clearDb() async {
+    var dbClient = await db;
+    return dbClient.delete(TABLE);
   }
 }

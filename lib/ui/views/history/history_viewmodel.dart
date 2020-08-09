@@ -37,8 +37,6 @@ class HistoryViewModel extends BaseViewModel {
   String get dateDropdownText => 'TANGGAL';
   String get flightDropdownText => 'KODE';
   String get emptyContainerText => 'TIDAK ADA DATA!';
-  String get deleteDatabaseDialogDescription =>
-      'Anda yakin ingin menghapus seluruh data?';
 
 // Setter
   void setFlightDatas(List<FlightData> flightDatas) {
@@ -79,31 +77,54 @@ class HistoryViewModel extends BaseViewModel {
     _choosenFlight = choosenFlight;
   }
 
-  // Viewmodel Function
-  initialise() async {
+// Logical state base on dropdown
+  int dropdownCase() {
+    if (_isDateChoosen && _isFlightChoosen) {
+      return 0;
+    } else if (_isDateChoosen && !_isFlightChoosen) {
+      return 1;
+    } else if (!_isDateChoosen && _isFlightChoosen) {
+      return 2;
+    } else {
+      return 3;
+    }
+  }
+
+// Viewmodel Function
+  initialise() {
+    refreshPage();
+  }
+
+  refreshPage() async {
     setIsThereData(false);
     setIsDateChoosen(false);
     setIsFlightChoosen(false);
+    setChoosenDate(null);
+    setChoosenFlight(null);
     await getData();
     if (_isThereData) {
-      setChoosenDate(null);
-      setChoosenFlight(null);
       getDateList();
       getFlightList();
       getFlightNumber();
     }
   }
 
-  // Logical value setter
+// Logical value setter
+  /// Get data for the Listview builder (flightDatas)
   Future getData() async {
-    if (_isDateChoosen && _isFlightChoosen) {
-      setFlightDatas(await dbGetDateFlightData());
-    } else if (_isDateChoosen && !_isFlightChoosen) {
-      setFlightDatas(await dbGetDateData());
-    } else if (!_isDateChoosen && _isFlightChoosen) {
-      setFlightDatas(await dbGetFlightData());
-    } else {
-      setFlightDatas(await dbGetData());
+    switch (dropdownCase()) {
+      case 0:
+        setFlightDatas(await dbGetDateFlightData());
+        break;
+      case 1:
+        setFlightDatas(await dbGetDateData());
+        break;
+      case 2:
+        setFlightDatas(await dbGetFlightData());
+        break;
+      case 3:
+        setFlightDatas(await dbGetData());
+        break;
     }
     if (_flightDatas != null && _flightDatas.length != 0) {
       getFlightNumber();
@@ -112,11 +133,22 @@ class HistoryViewModel extends BaseViewModel {
     notifyListeners();
   }
 
+  /// Get available flight based on FlighDatas, for the Listview grouping
+  getFlightNumber() {
+    List<String> _fn = [];
+    _flightDatas.forEach((element) => _fn.add(element.getFlightNumber));
+    List<String> distinctFN = _fn.toSet().toList();
+    setFlightNumber(distinctFN);
+    notifyListeners();
+  }
+
+  /// Get all available date on dropdown
   Future getDateList() async {
     setDateList(await dbGetDateList());
     notifyListeners();
   }
 
+  /// Get all available flight on dropdown
   Future getFlightList() async {
     if (isDateChoosen) {
       setFlightList(await dbGetFlightListWithDate());
@@ -126,14 +158,8 @@ class HistoryViewModel extends BaseViewModel {
     notifyListeners();
   }
 
-  void getFlightNumber() {
-    List<String> _fn = [];
-    _flightDatas.forEach((element) => _fn.add(element.getFlightNumber));
-    List<String> distinctFN = _fn.toSet().toList();
-    setFlightNumber(distinctFN);
-  }
-
-  // Connect to database services
+// Connect to database services
+  /// Get data from database for each case
   Future<List<FlightData>> dbGetDateFlightData() async {
     return await _databaseService.getDateFlightData(
         _choosenDate, _choosenFlight);
@@ -151,10 +177,12 @@ class HistoryViewModel extends BaseViewModel {
     return await _databaseService.getData();
   }
 
+  ///Get date list from database for the dropdown
   Future<List<String>> dbGetDateList() async {
     return await _databaseService.getDateList();
   }
 
+  ///Get flight list from database for the dropdown
   Future<List<String>> dbGetFlightListWithDate() async {
     return await _databaseService.getFlightList(_choosenDate);
   }
@@ -163,7 +191,7 @@ class HistoryViewModel extends BaseViewModel {
     return await _databaseService.getFlightListNoDate();
   }
 
-  //onTap function
+//onTap function
   void onChangedDateList(dynamic value) {
     setChoosenDate(value);
     setIsFlightChoosen(false);
@@ -188,19 +216,44 @@ class HistoryViewModel extends BaseViewModel {
     getData();
   }
 
-  void onTapDeleteIcon(String message) async {
+  onTapDeleteIcon() async {
+    String message;
+    switch (dropdownCase()) {
+      case 0:
+        message =
+            'Anda ingin menghapus data $_choosenFlight tanggal $_choosenDate?';
+        break;
+      case 1:
+        message = 'Anda ingin menghapus data tanggal $_choosenDate?';
+        break;
+      case 2:
+        message = 'Anda ingin menghapus data $_choosenFlight?';
+        break;
+      case 3:
+        message = 'Anda ingin menghapus semua data?';
+        break;
+    }
     var response = await _dialogService.showCustomDialog(
       variant: DialogType.base,
       description: message,
     );
     if (response.confirmed) {
-      await _databaseService.clearDb();
-      setIsThereData(false);
-      setChoosenDate(null);
-      setChoosenFlight(null);
-      notifyListeners();
-    } else {
-      _navigationService.popRepeated(1);
+      switch (dropdownCase()) {
+        case 0:
+          await _databaseService.clearDbDateFlight(
+              _choosenDate, _choosenFlight);
+          break;
+        case 1:
+          await _databaseService.clearDbDate(_choosenDate);
+          break;
+        case 2:
+          await _databaseService.clearDbFlight(_choosenFlight);
+          break;
+        case 3:
+          await _databaseService.clearDb();
+          break;
+      }
+      refreshPage();
     }
   }
 

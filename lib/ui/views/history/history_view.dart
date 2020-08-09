@@ -185,7 +185,6 @@ class NotEmptyContainer extends ViewModelWidget<HistoryViewModel> {
                 child: Column(
                   children: model.flightDatas?.map((data) {
                         if (data.getFlightNumber == model.flightNumber[index]) {
-                          print(data.getName);
                           return new Container(
                             child: InkWell(
                               onTap: () {
@@ -283,7 +282,7 @@ class BottomButton extends ViewModelWidget<HistoryViewModel> {
             color: Colors.transparent,
             child: InkWell(
               onTap: () {
-                model.onTapDeleteIcon(model.deleteDatabaseDialogDescription);
+                model.onTapDeleteIcon();
               },
             ),
           ),
