@@ -14,7 +14,8 @@ class HistoryViewModel extends BaseViewModel {
 
   List<FlightData> _flightDatas;
   List<String> _dateList;
-  List<String> _flightList = [];
+  List<String> _flightList;
+  List<String> _flightNumber = [];
   bool _isThereData;
   bool _isDateChoosen;
   bool _isFlightChoosen;
@@ -26,6 +27,7 @@ class HistoryViewModel extends BaseViewModel {
   List<FlightData> get flightDatas => _flightDatas;
   List<String> get dateList => _dateList;
   List<String> get flightList => _flightList;
+  List<String> get flightNumber => _flightNumber;
   bool get isThereData => _isThereData;
   bool get isDateChoosen => _isDateChoosen;
   bool get isFlightChoosen => _isFlightChoosen;
@@ -51,6 +53,10 @@ class HistoryViewModel extends BaseViewModel {
   void setFlightList(List<String> flightList) {
     _flightList = flightList;
     _flightList.insert(0, _semua);
+  }
+
+  void setFlightNumber(List<String> flightNumber) {
+    _flightNumber = flightNumber;
   }
 
   void setIsThereData(bool isThereData) {
@@ -84,6 +90,7 @@ class HistoryViewModel extends BaseViewModel {
       setChoosenFlight(null);
       getDateList();
       getFlightList();
+      getFlightNumber();
     }
   }
 
@@ -99,6 +106,7 @@ class HistoryViewModel extends BaseViewModel {
       setFlightDatas(await dbGetData());
     }
     if (_flightDatas != null && _flightDatas.length != 0) {
+      getFlightNumber();
       setIsThereData(true);
     }
     notifyListeners();
@@ -116,6 +124,13 @@ class HistoryViewModel extends BaseViewModel {
       setFlightList(await dbGetFlightListNoDate());
     }
     notifyListeners();
+  }
+
+  void getFlightNumber() {
+    List<String> _fn = [];
+    _flightDatas.forEach((element) => _fn.add(element.getFlightNumber));
+    List<String> distinctFN = _fn.toSet().toList();
+    setFlightNumber(distinctFN);
   }
 
   // Connect to database services
