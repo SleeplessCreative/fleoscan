@@ -15,6 +15,7 @@ class HomeView extends StatelessWidget {
     return ViewModelBuilder<HomeViewModel>.nonReactive(
         builder: (context, model, child) {
           return Scaffold(
+            extendBody: true,
             appBar: AppbarView(
               height: 100,
               burgerButton: true,
@@ -41,7 +42,7 @@ class HomeView extends StatelessWidget {
                     ),
                   ),
                   Expanded(
-                    flex: 4,
+                    flex: 6,
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -54,9 +55,10 @@ class HomeView extends StatelessWidget {
                       child: Container(
                         alignment: Alignment.center,
                         padding: EdgeInsets.only(
-                          top: 55,
+                          top: 0,
                           left: 30,
                           right: 30,
+                          bottom: 60,
                         ),
                         child: RichText(
                           textAlign: TextAlign.center,
