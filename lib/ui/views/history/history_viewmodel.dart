@@ -13,17 +13,18 @@ class HistoryViewModel extends BaseViewModel {
   final NavigationService _navigationService = locator<NavigationService>();
 
   List<FlightData> _flightDatas;
-  List<String> _flightDateList;
-  List<String> _flightList;
+  List<String> _dateList;
+  List<String> _flightList = [];
   bool _isThereData;
   bool _isDateChoosen;
   bool _isFlightChoosen;
   String _choosenDate;
   String _choosenFlight;
+  String _semua = 'SEMUA';
 
 // Getter
   List<FlightData> get flightDatas => _flightDatas;
-  List<String> get flightDateList => _flightDateList;
+  List<String> get dateList => _dateList;
   List<String> get flightList => _flightList;
   bool get isThereData => _isThereData;
   bool get isDateChoosen => _isDateChoosen;
@@ -42,12 +43,14 @@ class HistoryViewModel extends BaseViewModel {
     _flightDatas = flightDatas;
   }
 
-  void setFlightDateList(List<String> flightDateList) {
-    _flightDateList = flightDateList;
+  void setDateList(List<String> dateList) {
+    _dateList = dateList;
+    _dateList.insert(0, _semua);
   }
 
   void setFlightList(List<String> flightList) {
     _flightList = flightList;
+    _flightList.insert(0, _semua);
   }
 
   void setIsThereData(bool isThereData) {
@@ -70,50 +73,104 @@ class HistoryViewModel extends BaseViewModel {
     _choosenFlight = choosenFlight;
   }
 
-// Viewmodel Function
-  initialise() {
+  // Viewmodel Function
+  initialise() async {
     setIsThereData(false);
     setIsDateChoosen(false);
     setIsFlightChoosen(false);
-    notifyListeners();
-    getBasicDataList();
+    await getData();
+    if (_isThereData) {
+      setChoosenDate(null);
+      setChoosenFlight(null);
+      getDateList();
+      getFlightList();
+    }
   }
 
-  Future getBasicDataList() async {
-    setFlightDatas(await _databaseService.getFlightData());
-    setFlightDateList(await _databaseService.getFlightDateList());
+  // Logical value setter
+  Future getData() async {
+    if (_isDateChoosen && _isFlightChoosen) {
+      setFlightDatas(await dbGetDateFlightData());
+    } else if (_isDateChoosen && !_isFlightChoosen) {
+      setFlightDatas(await dbGetDateData());
+    } else if (!_isDateChoosen && _isFlightChoosen) {
+      setFlightDatas(await dbGetFlightData());
+    } else {
+      setFlightDatas(await dbGetData());
+    }
     if (_flightDatas != null && _flightDatas.length != 0) {
       setIsThereData(true);
     }
     notifyListeners();
   }
 
-  Future getFlightList(String choosenDate) async {
-    setFlightList(await _databaseService.getFlightList(choosenDate));
+  Future getDateList() async {
+    setDateList(await dbGetDateList());
     notifyListeners();
   }
 
-  Future getFilteredDataList(String _choosenDate, String _choosenFlight) async {
-    if (_isDateChoosen && _isFlightChoosen) {
-      setFlightDatas(await _databaseService.getFlightDataFiltered(
-          choosenDate, choosenFlight));
-      notifyListeners();
+  Future getFlightList() async {
+    if (isDateChoosen) {
+      setFlightList(await dbGetFlightListWithDate());
+    } else {
+      setFlightList(await dbGetFlightListNoDate());
     }
+    notifyListeners();
   }
 
+  // Connect to database services
+  Future<List<FlightData>> dbGetDateFlightData() async {
+    return await _databaseService.getDateFlightData(
+        _choosenDate, _choosenFlight);
+  }
+
+  Future<List<FlightData>> dbGetDateData() async {
+    return await _databaseService.getDateData(_choosenDate);
+  }
+
+  Future<List<FlightData>> dbGetFlightData() async {
+    return await _databaseService.getFlightData(_choosenFlight);
+  }
+
+  Future<List<FlightData>> dbGetData() async {
+    return await _databaseService.getData();
+  }
+
+  Future<List<String>> dbGetDateList() async {
+    return await _databaseService.getDateList();
+  }
+
+  Future<List<String>> dbGetFlightListWithDate() async {
+    return await _databaseService.getFlightList(_choosenDate);
+  }
+
+  Future<List<String>> dbGetFlightListNoDate() async {
+    return await _databaseService.getFlightListNoDate();
+  }
+
+  //onTap function
   void onChangedDateList(dynamic value) {
     setChoosenDate(value);
-    setChoosenFlight(null);
-    setIsDateChoosen(true);
-    notifyListeners();
-    getFlightList(_choosenDate);
+    setIsFlightChoosen(false);
+    if (value == 'SEMUA') {
+      setIsDateChoosen(false);
+      setChoosenFlight(null);
+    } else {
+      setChoosenFlight('SEMUA');
+      setIsDateChoosen(true);
+    }
+    getFlightList();
+    getData();
   }
 
   void onChangedFlightList(dynamic value) {
     setChoosenFlight(value);
-    setIsFlightChoosen(true);
-    notifyListeners();
-    getFilteredDataList(_choosenDate, _choosenFlight);
+    if (value == 'SEMUA') {
+      setIsFlightChoosen(false);
+    } else {
+      setIsFlightChoosen(true);
+    }
+    getData();
   }
 
   void onTapDeleteIcon(String message) async {

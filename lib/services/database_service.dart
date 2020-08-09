@@ -70,20 +70,20 @@ class DatabaseService {
     return flightData;
   }
 
-  Future<List<FlightData>> getFlightData() async {
-    var dbClient = await db;
-    List<Map> maps = await dbClient.rawQuery('''
-      SELECT * FROM $TABLE 
-      ORDER BY $ID DESC   
-    ''');
-    List<FlightData> flightDatas = [];
-    if (maps.length > 0) {
-      for (int i = 0; i < maps.length; i++) {
-        flightDatas.add(FlightData.fromMap(maps[i]));
-      }
-    }
-    return flightDatas;
-  }
+  // Future<List<FlightData>> getFlightData() async {
+  //   var dbClient = await db;
+  //   List<Map> maps = await dbClient.rawQuery('''
+  //     SELECT * FROM $TABLE
+  //     ORDER BY $ID DESC
+  //   ''');
+  //   List<FlightData> flightDatas = [];
+  //   if (maps.length > 0) {
+  //     for (int i = 0; i < maps.length; i++) {
+  //       flightDatas.add(FlightData.fromMap(maps[i]));
+  //     }
+  //   }
+  //   return flightDatas;
+  // }
 
   Future<int> delete(int id) async {
     var dbClient = await db;
@@ -122,7 +122,7 @@ class DatabaseService {
   }
 
   //--Untuk fetch tanggal penerbangan yang pernah discan, return Array String
-  Future<List<String>> getFlightDateList() async {
+  Future<List<String>> getDateList() async {
     var dbClient = await db;
     List<Map> maps = await dbClient.rawQuery('''
     SELECT * FROM $TABLE 
@@ -154,14 +154,80 @@ class DatabaseService {
     return flightList;
   }
 
+  //--Untuk fetch kode penerbangan sesuai tanggal, return Array String
+  Future<List<String>> getFlightListNoDate() async {
+    var dbClient = await db;
+    List<Map> maps = await dbClient.rawQuery('''
+      SELECT * FROM $TABLE 
+      GROUP BY $FLIGHTNUMBER  
+    ''');
+    List<String> flightList = [];
+    if (maps.length > 0) {
+      for (int i = 0; i < maps.length; i++) {
+        flightList.add(FlightData.fromMap(maps[i]).flightNumber);
+      }
+    }
+    return flightList;
+  }
+
   //--Untuk fetch data history sesuai dengan tanggal dan kode penerbangan
-  Future<List<FlightData>> getFlightDataFiltered(
+  Future<List<FlightData>> getDateFlightData(
       String _flightDate, String _flightNumber) async {
     var dbClient = await db;
     List<Map> maps = await dbClient.rawQuery('''
       SELECT * FROM $TABLE 
       WHERE $FLIGHTDATE='$_flightDate' AND $FLIGHTNUMBER='$_flightNumber'
       ORDER BY $NAME ASC   
+    ''');
+    List<FlightData> flightDatas = [];
+    if (maps.length > 0) {
+      for (int i = 0; i < maps.length; i++) {
+        flightDatas.add(FlightData.fromMap(maps[i]));
+      }
+    }
+    return flightDatas;
+  }
+
+  //--Untuk fetch data history sesuai dengan tanggal
+  Future<List<FlightData>> getDateData(String _flightDate) async {
+    var dbClient = await db;
+    List<Map> maps = await dbClient.rawQuery('''
+      SELECT * FROM $TABLE 
+      WHERE $FLIGHTDATE='$_flightDate'
+      ORDER BY $NAME ASC   
+    ''');
+    List<FlightData> flightDatas = [];
+    if (maps.length > 0) {
+      for (int i = 0; i < maps.length; i++) {
+        flightDatas.add(FlightData.fromMap(maps[i]));
+      }
+    }
+    return flightDatas;
+  }
+
+// sesuai dengan flight
+  Future<List<FlightData>> getFlightData(String choosenFlight) async {
+    var dbClient = await db;
+    List<Map> maps = await dbClient.rawQuery('''
+      SELECT * FROM $TABLE 
+      WHERE $FLIGHTNUMBER='$choosenFlight'
+      ORDER BY $NAME ASC   
+    ''');
+    List<FlightData> flightDatas = [];
+    if (maps.length > 0) {
+      for (int i = 0; i < maps.length; i++) {
+        flightDatas.add(FlightData.fromMap(maps[i]));
+      }
+    }
+    return flightDatas;
+  }
+
+  //--Untuk fetch data history
+  Future<List<FlightData>> getData() async {
+    var dbClient = await db;
+    List<Map> maps = await dbClient.rawQuery('''
+      SELECT * FROM $TABLE 
+      ORDER BY $ID DESC   
     ''');
     List<FlightData> flightDatas = [];
     if (maps.length > 0) {
