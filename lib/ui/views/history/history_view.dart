@@ -25,11 +25,11 @@ class HistoryView extends StatelessWidget {
                     child: Row(
                       children: [
                         Expanded(
-                          flex: 55,
+                          flex: 50,
                           child: DateDropDownButton(),
                         ),
                         Expanded(
-                          flex: 45,
+                          flex: 50,
                           child: FlightDropDownButton(),
                         ),
                       ],
@@ -57,12 +57,12 @@ class DateDropDownButton extends ViewModelWidget<HistoryViewModel> {
   @override
   Widget build(BuildContext context, HistoryViewModel model) {
     return Container(
-      alignment: Alignment.centerLeft,
+      alignment: Alignment.center,
       margin: EdgeInsets.only(left: 20),
       child: DropdownButtonHideUnderline(
         child: DropdownButton(
           value: model.choosenDate,
-          items: model.flightDateList?.map((value) {
+          items: model.dateList?.map((value) {
                 return DropdownMenuItem(
                   child: Center(
                     child: new Text(
@@ -98,8 +98,8 @@ class FlightDropDownButton extends ViewModelWidget<HistoryViewModel> {
   @override
   Widget build(BuildContext context, HistoryViewModel model) {
     return Container(
-      alignment: Alignment.centerLeft,
-      margin: EdgeInsets.only(left: 20),
+      alignment: Alignment.center,
+      margin: EdgeInsets.only(right: 20),
       child: DropdownButtonHideUnderline(
         child: DropdownButton(
           value: model.choosenFlight,
