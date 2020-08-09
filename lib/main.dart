@@ -19,14 +19,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarColor: FleoColor.c300(),
-      systemNavigationBarColor: Colors.transparent,
       statusBarIconBrightness: Brightness.dark,
+      systemNavigationBarColor: Colors.transparent,
+      systemNavigationBarIconBrightness: Brightness.dark,
     ));
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Fleoscan',
       theme: ThemeData(
         fontFamily: 'Montserrat',
+        accentColor: FleoColor.c100(),
+        splashColor: FleoColor.c100(),
+        highlightColor: FleoColor.c100(),
       ),
       initialRoute: rtr.Routes.homeView,
       onGenerateRoute: rtr.Router().onGenerateRoute,
