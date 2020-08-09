@@ -5,9 +5,9 @@
 
 import 'dart:collection';
 
-class Airports{
+class Airports {
   HashMap airport = new HashMap<String, String>();
-  Airports(){
+  Airports() {
     airport['AMI'] = 'Selaparang Airport';
     airport['AMQ'] = 'Pattimura Airport';
     airport['ARD'] = 'Alor Island Airport';
@@ -30,6 +30,7 @@ class Airports{
     airport['JOG'] = 'Adisucipto International Airport';
     airport['KDI'] = 'Haluoleo Airport';
     airport['KNG'] = 'Utarom Airport';
+    airport['KNO'] = 'Kualanamu International Airport';
     airport['KOE'] = 'El Tari Kupang International Airport';
     airport['LBJ'] = 'Komodo Airport';
     airport['LKA'] = 'Gewayantana Larantuka Airport';
