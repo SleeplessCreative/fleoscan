@@ -263,28 +263,62 @@ class BottomButton extends ViewModelWidget<HistoryViewModel> {
 
   @override
   Widget build(BuildContext context, HistoryViewModel model) {
-    return Stack(
-      children: <Widget>[
-        Positioned.fill(
-          child: Container(
-            decoration: BoxDecoration(
-              color: FleoColor.c800(),
-              boxShadow: [defaultShadow],
-            ),
-            child: Icon(
-              Icons.delete,
-              color: Colors.white,
-            ),
+    return Row(
+      children: [
+        Expanded(
+          child: Stack(
+            children: <Widget>[
+              Positioned.fill(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: FleoColor.c600(),
+                    boxShadow: [defaultShadow],
+                  ),
+                  child: Icon(
+                    Icons.save,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              Positioned.fill(
+                child: Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    onTap: () {
+                      model.onTapSaveIcon();
+                    },
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
-        Positioned.fill(
-          child: Material(
-            color: Colors.transparent,
-            child: InkWell(
-              onTap: () {
-                model.onTapDeleteIcon();
-              },
-            ),
+        Expanded(
+          child: Stack(
+            children: <Widget>[
+              Positioned.fill(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: FleoColor.c800(),
+                    boxShadow: [defaultShadow],
+                  ),
+                  child: Icon(
+                    Icons.delete,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              Positioned.fill(
+                child: Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    onTap: () {
+                      model.onTapDeleteIcon();
+                    },
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ],

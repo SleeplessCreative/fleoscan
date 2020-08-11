@@ -1,6 +1,9 @@
 import 'package:fleoscan/app/locator.dart';
 import 'package:fleoscan/datamodels/flight_data.dart';
+import 'package:fleoscan/datamodels/save_pdf_properties.dart';
 import 'package:fleoscan/services/database_service.dart';
+import 'package:fleoscan/services/pdf_create_services.dart';
+import 'package:fleoscan/ui/snackbar_type.dart';
 import 'package:fleoscan/ui/views/history/show_item/show_item_view.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
@@ -10,7 +13,9 @@ import '../../dialog_type.dart';
 class HistoryViewModel extends BaseViewModel {
   final DatabaseService _databaseService = locator<DatabaseService>();
   final DialogService _dialogService = locator<DialogService>();
+  final SnackbarService _snackbarService = locator<SnackbarService>();
   final NavigationService _navigationService = locator<NavigationService>();
+  final CreatePdfService _createPdfService = locator<CreatePdfService>();
 
   List<FlightData> _flightDatas;
   List<String> _dateList;
@@ -216,50 +221,100 @@ class HistoryViewModel extends BaseViewModel {
     getData();
   }
 
+  Future onTapContainerData(FlightData value) async {
+    await _navigationService.navigateToView(ShowItemView(
+      passData: value,
+    ));
+  }
+
   onTapDeleteIcon() async {
-    String message;
+    String dialogMessage;
     switch (dropdownCase()) {
       case 0:
-        message =
+        dialogMessage =
             'Anda ingin menghapus data $_choosenFlight tanggal $_choosenDate?';
         break;
       case 1:
-        message = 'Anda ingin menghapus data tanggal $_choosenDate?';
+        dialogMessage = 'Anda ingin menghapus data tanggal $_choosenDate?';
         break;
       case 2:
-        message = 'Anda ingin menghapus data $_choosenFlight?';
+        dialogMessage = 'Anda ingin menghapus data $_choosenFlight?';
         break;
       case 3:
-        message = 'Anda ingin menghapus semua data?';
+        dialogMessage = 'Anda ingin menghapus semua data?';
         break;
     }
     var response = await _dialogService.showCustomDialog(
       variant: DialogType.base,
-      description: message,
+      description: dialogMessage,
     );
+    String snackBarMessage;
+    String snackBarTitle = 'Berhasil';
     if (response.confirmed) {
       switch (dropdownCase()) {
         case 0:
           await _databaseService.clearDbDateFlight(
               _choosenDate, _choosenFlight);
+          snackBarMessage =
+              'Data $_choosenFlight tanggal $_choosenDate telah dihapus.';
           break;
         case 1:
           await _databaseService.clearDbDate(_choosenDate);
+          snackBarMessage = 'Data tanggal $_choosenDate telah dihapus.';
           break;
         case 2:
           await _databaseService.clearDbFlight(_choosenFlight);
+          snackBarMessage = 'Data $_choosenFlight telah dihapus.';
           break;
         case 3:
           await _databaseService.clearDb();
+          snackBarMessage = 'Semua data telah dihapus.';
           break;
       }
+      showSnackbarService(snackBarTitle, snackBarMessage);
       refreshPage();
     }
   }
 
-  Future onTapContainerData(FlightData value) async {
-    await _navigationService.navigateToView(ShowItemView(
-      passData: value,
-    ));
+  onTapSaveIcon() async {
+    String snackBarMessage;
+    String snackBarTitle = 'Gagal';
+    switch (dropdownCase()) {
+      case 0:
+        SavePdfProperties savePdfProperties = new SavePdfProperties(
+          data: _flightDatas,
+          code: _flightDatas.first.getAirLineCode,
+          origin: _flightDatas.first.getFromAirportName,
+          destination: _flightDatas.first.getToAirportName,
+          cabinClass: _flightDatas.first.getCabinClass,
+          flightNumber: _choosenFlight,
+          flightDate: _choosenDate,
+        );
+        await _createPdfService.startPdfService(savePdfProperties);
+        snackBarMessage = 'Berhasil menyimpan PDF.';
+        snackBarTitle = 'Berhasil';
+        break;
+      case 1:
+        snackBarMessage = 'Silahkan pilih kode penerbangan!';
+        break;
+      case 2:
+        snackBarMessage = 'Silahkan pilih tanggal!';
+        break;
+      case 3:
+        snackBarMessage = 'Silahkan pilih tanggal dan kode penerbangan!';
+        break;
+    }
+    showSnackbarService(snackBarTitle, snackBarMessage);
+  }
+
+  showSnackbarService(String title, String message) {
+    _snackbarService.showCustomSnackBar(
+      variant: title == 'Gagal'
+          ? SnackbarType.defaultColor
+          : SnackbarType.greenAndWhite,
+      title: title,
+      message: message,
+      duration: Duration(seconds: 3),
+    );
   }
 }
