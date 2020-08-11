@@ -41,9 +41,9 @@ class ScanViewModel extends BaseViewModel {
     notifyListeners();
   }
 
-  initialise() {
-    getDeviceInfo();
-    getScanParsedResult();
+  initialise() async {
+    await getDeviceInfo();
+    await getScanParsedResult();
   }
 
   Future getScanParsedResult() async {

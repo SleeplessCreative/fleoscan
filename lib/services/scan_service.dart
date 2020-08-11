@@ -5,7 +5,7 @@ import 'package:injectable/injectable.dart';
 
 @lazySingleton
 class ScanService {
-  FlightData parseResult = new FlightData();
+  FlightData parseResult = new FlightData.initial();
 
   Future<FlightData> get result async {
     await startScan();
@@ -14,10 +14,10 @@ class ScanService {
 
   Future startScan() async {
     String scanResult = await BarcodeScanner.scan();
-    parseScanResult(scanResult);
+    await parseScanResult(scanResult);
   }
 
-  parseScanResult(String scanResult) {
-    parseResult = ParseResult(scanResult).process;
+  parseScanResult(String scanResult) async {
+    parseResult = await ParseResult(scanResult).process;
   }
 }

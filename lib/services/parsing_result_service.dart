@@ -1,20 +1,22 @@
+import 'package:fleoscan/app/locator.dart';
 import 'package:fleoscan/datamodels/flight_data.dart';
-import 'package:fleoscan/items/airlines.dart';
-import 'package:fleoscan/items/airports.dart';
 import 'package:fleoscan/items/cabins.dart';
 import 'package:fleoscan/items/months.dart';
+import 'package:fleoscan/services/airlines_service.dart';
+import 'package:fleoscan/services/airports_service.dart';
 
 class ParseResult {
   final String s;
   ParseResult(this.s);
 
-  Airports listAirport = new Airports();
-  Airlines listAirline = new Airlines();
+  final AirportsService _airportsService = locator<AirportsService>();
+  final AirlinesService _airlinesService = locator<AirlinesService>();
+
   Cabins listCabin = new Cabins();
   Months listMonth = new Months();
 
   FlightData _process = new FlightData.initial();
-  FlightData get process {
+  Future<FlightData> get process async {
     //Name
     int pos = s.indexOf('/');
     String lastName = removeSpace(s.substring(2, pos));
@@ -36,14 +38,13 @@ class ParseResult {
     _process.setFromAirportCode(s.substring(30, 33));
     _process.setToAirportCode(s.substring(33, 36));
     _process.setFromAirportName(
-        listAirport.airport[_process.fromAirportCode].toString().toUpperCase());
-    _process.setToAirportName(
-        listAirport.airport[_process.toAirportCode].toString().toUpperCase());
+        _airportsService.checkData(_process.fromAirportCode));
+    _process
+        .setToAirportName(_airportsService.checkData(_process.toAirportCode));
 
     //Airlines
     _process.setAirLineCode(s.substring(36, 38));
-    _process.setAirLineName(
-        listAirline.airline[_process.airLineCode].toString().toUpperCase());
+    _process.setAirLineName(_airlinesService.checkData(_process.airLineCode));
 
     //Flight Number
     _process.setFlightNumber(_process.airLineCode + s.substring(39, 43));

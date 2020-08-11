@@ -8,6 +8,8 @@ import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
 import 'package:stacked_services/stacked_services.dart';
 
+import '../services/airlines_service.dart';
+import '../services/airports_service.dart';
 import '../services/analytics_service.dart';
 import '../services/pdf_create_services.dart';
 import '../services/database_service.dart';
@@ -26,6 +28,8 @@ GetIt $initGetIt(
 }) {
   final gh = GetItHelper(get, environment, environmentFilter);
   final thirdPartyServicesModule = _$ThirdPartyServicesModule();
+  gh.lazySingleton<AirlinesService>(() => AirlinesService());
+  gh.lazySingleton<AirportsService>(() => AirportsService());
   gh.lazySingleton<AnalyticsService>(() => AnalyticsService());
   gh.lazySingleton<CreatePdfService>(() => CreatePdfService());
   gh.lazySingleton<DatabaseService>(() => DatabaseService());
