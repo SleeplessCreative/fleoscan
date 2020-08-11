@@ -2,6 +2,7 @@
 // Class untuk Objek data penerbangan
 // Ada Getter-Setter, From Map - To Map
 //=====================================
+
 class FlightData {
   int id;
   String name;
@@ -170,5 +171,19 @@ class FlightData {
     cabinClass = map['cabinClass'];
     seatNumber = map['seatNumber'];
     sequenceNumber = map['sequenceNumber'];
+  }
+
+  String getIndex(int index) {
+    switch (index) {
+      case 1:
+        return name;
+      case 2:
+        return bookingCode;
+      case 3:
+        return seatNumber;
+      case 4:
+        return sequenceNumber;
+    }
+    return '';
   }
 }
