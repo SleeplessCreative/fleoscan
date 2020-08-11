@@ -1,0 +1,2794 @@
+[
+	{
+		"nama": "FATMAWATI SOEKARNO",
+		"icao": "WIGG",
+		"iata": "BKS",
+		"kategori": "Domestik",
+		"kelas": "Kelas IB",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "DEPATI AMIR",
+		"icao": "WIKK",
+		"iata": "PGK",
+		"kategori": "Domestik",
+		"kelas": "Kelas IA",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "SULTAN THAHA",
+		"icao": "WIJJ",
+		"iata": "DJB",
+		"kategori": "Domestik",
+		"kelas": "Kelas IA",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "H.A.S. HANANDJOEDDIN",
+		"icao": "WIKT",
+		"iata": "TJQ",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MUTIARA SIS-AL JUFRI",
+		"icao": "WAML",
+		"iata": "PLW",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "DJALALUDDIN",
+		"icao": "WAMG",
+		"iata": "GTO",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "CUT NYAK DIEN",
+		"icao": "WITC",
+		"iata": "MEQ",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MELONGGUANE",
+		"icao": "WAMN",
+		"iata": "MNA",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "NAHA",
+		"icao": "WAMH",
+		"iata": "NAH",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TJILIK RIWUT",
+		"icao": "WAGG",
+		"iata": "PKY",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "DOUW ATURURE - NABIRE",
+		"icao": "WABI",
+		"iata": "NBX",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "JEFMAN",
+		"icao": "WASS",
+		"iata": "SOQ",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "RADIN INTEN II",
+		"icao": "WILL",
+		"iata": "TKG",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "AEK GODANG",
+		"icao": "WIME",
+		"iata": "AEG",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TAMBOLAKA",
+		"icao": "WATK",
+		"iata": "TMC",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SULTAN MUHAMMAD SALAHUDDIN",
+		"icao": "WADB",
+		"iata": "BMU",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MULIA",
+		"icao": "WAVA",
+		"iata": "LII",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "HALU OLEO",
+		"icao": "WAWW",
+		"iata": "KDI",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "AJI PANGERAN TUMENGGUNG PRANOTO",
+		"icao": "WALS",
+		"iata": "AAP",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TAMPA PADANG MAMUJU",
+		"icao": "WAFJ",
+		"iata": "MJU",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "NUNUKAN",
+		"icao": "WAQA",
+		"iata": "NNX",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TEBELIAN",
+		"icao": "WIOS",
+		"iata": "SQG",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "ISKANDAR",
+		"icao": "WAOI",
+		"iata": "PKN",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SYUKURAN AMINUDDIN AMIR",
+		"icao": "WAMW",
+		"iata": "LUW",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "PANGSUMA",
+		"icao": "WIOP",
+		"iata": "PSU",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "NANGAPINOH",
+		"icao": "WIOG",
+		"iata": "NPO",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KASIGUNCU",
+		"icao": "WAFP",
+		"iata": "PSJ",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "POGOGUL BUOL",
+		"icao": "WAFY",
+		"iata": "UOL",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "RAHADI OESMAN",
+		"icao": "WIOK",
+		"iata": "KTG",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "H.HASAN AROEBOESMAN",
+		"icao": "WATE",
+		"iata": "ENE",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "AMAHAI",
+		"icao": "WAPA",
+		"iata": "AHI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "ILAGA",
+		"icao": "WAYL",
+		"iata": "ILA",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TUNGGUL WULUNG",
+		"icao": "WAHL",
+		"iata": "CXP",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MAIMUN SALEH",
+		"icao": "WIAB",
+		"iata": "SBG",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TEUKU CUT ALI TAPAKTUAN",
+		"icao": "WITA",
+		"iata": "TPK",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SIBISA",
+		"icao": "WIMP",
+		"iata": "SIW",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MUKOMUKO",
+		"icao": "WIGM",
+		"iata": "MPC",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "DABO",
+		"icao": "WIDS",
+		"iata": "SIQ",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "JAPURA",
+		"icao": "WIPR",
+		"iata": "RGT",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "YUVAI SEMARING",
+		"icao": "WAQJ",
+		"iata": "LBW",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TANJUNG HARAPAN",
+		"icao": "WAQD",
+		"iata": "TJS",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KOL. RA. BESSING - MALINAU",
+		"icao": "WAQM",
+		"iata": "LNU",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "DATAH DAWAI",
+		"icao": "WALJ",
+		"iata": "DTD",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SULTAN BANTILAN",
+		"icao": "WAMI",
+		"iata": "TLI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "PONGTIKU",
+		"icao": "WAFT",
+		"iata": "TTR",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "ANDI JEMMA",
+		"icao": "WAWM",
+		"iata": "MXB",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SUGIMANURU MUNA",
+		"icao": "WAWR",
+		"iata": "RAQ",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BETO AMBARI",
+		"icao": "WAWB",
+		"iata": "BUW",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KAREL SADSUITUBUN - LANGGUR",
+		"icao": "WAPF",
+		"iata": "LUV",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "NAMNIWEL",
+		"icao": "WAPN",
+		"iata": "NAM",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MATHILDA BATLAYERI",
+		"icao": "WAPI",
+		"iata": "SXK",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BANDANEIRA",
+		"icao": "WAPC",
+		"iata": "NDA",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "DOBO",
+		"icao": "WAPD",
+		"iata": "DOB",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "WAHAI",
+		"icao": "WAPV",
+		"iata": "WHI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "NAMROLE",
+		"icao": "WAPG",
+		"iata": "NRE",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "LASIKIN",
+		"icao": "WITG",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "REMBELE TAKENGON",
+		"icao": "WITK",
+		"iata": "TXE",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "Dr. F.L. TOBING / PINANGSORI",
+		"icao": "WIMS",
+		"iata": "FLZ",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "LASONDRE",
+		"icao": "WIMO",
+		"iata": "LSO",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "ROKOT",
+		"icao": "WIBR",
+		"iata": "RKI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "PASIR PANGARAIAN",
+		"icao": "WIBG",
+		"iata": "PPR",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "RAJA HAJI ABDULLAH",
+		"icao": "WIDT",
+		"iata": "TJB",
+		"kategori": "Domestik",
+		"kelas": "Kelas IIIC",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "DEPATI PARBO",
+		"icao": "WIJI",
+		"iata": "KRC",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SILAMPARI",
+		"icao": "WIPB",
+		"iata": "LLG",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "CAKRABHUWANA / PENGGUNG",
+		"icao": "WICD",
+		"iata": "CBN",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BUDIARTO",
+		"icao": "WIRR",
+		"iata": "BTO",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "DEWADARU",
+		"icao": "WAHU",
+		"iata": "KWB",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TRUNOJOYO",
+		"icao": "WART",
+		"iata": "SUP",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BLIMBINGSARI",
+		"icao": "WADY",
+		"iata": "BWX",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SULTAN MUHAMMAD KAHARUDDIN",
+		"icao": "WADS",
+		"iata": "SWQ",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "DAVID CONSTANTIJN SAUDALE",
+		"icao": "WATR",
+		"iata": "RTI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "UMBU MEHANG KUNDA",
+		"icao": "WATU",
+		"iata": "WGP",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "LABUHAN BAJO - KOMODO",
+		"icao": "WATO",
+		"iata": "LBJ",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "FRANS SALES LEGA",
+		"icao": "WRTG",
+		"iata": "RTG",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "A. A. BERE TALLO / ATAMBUA",
+		"icao": "WATA",
+		"iata": "ABU",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MALI",
+		"icao": "WRKM",
+		"iata": "ARD",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "GEWAYANTANA",
+		"icao": "WATL",
+		"iata": "LKA",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SOA",
+		"icao": "WATB",
+		"iata": "BJW",
+		"kategori": "Domestik",
+		"kelas": "Kelas IIIC",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TARDAMU",
+		"icao": "WATS",
+		"iata": "SAU",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KOKONAO",
+		"icao": "WABN",
+		"iata": "KOX",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "WAGHETE",
+		"icao": "WABA",
+		"iata": "WET",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MOANAMANI",
+		"icao": "WABD",
+		"iata": "ONI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "ENAROTALI",
+		"icao": "WAYE",
+		"iata": "EWI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SUDJARWO TJONDRONEGORO SERUI",
+		"icao": "WABO",
+		"iata": "ZRI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "NUMFOOR / BIAK NUMFOOR",
+		"icao": "WABF",
+		"iata": "FOO",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TANAH MERAH",
+		"icao": "WAKT",
+		"iata": "TMH",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KEPI",
+		"icao": "WAKP",
+		"iata": "KEI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SENGGO",
+		"icao": "WAKQ",
+		"iata": "ZEG",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BOKONDINI",
+		"icao": "WAJB",
+		"iata": "BUI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TIOM",
+		"icao": "WABH",
+		"iata": "TMY",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KIMAAM",
+		"icao": "WAKJ",
+		"iata": "KMM",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "OKSIBIL",
+		"icao": "WAJO",
+		"iata": "OKL",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "OKABA",
+		"icao": "WAKO",
+		"iata": "OKQ",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "AKIMUGA",
+		"icao": "WAYG",
+		"iata": "AKM",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BEOGA",
+		"icao": "-",
+		"iata": "BXG",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KEBO",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BILORAI",
+		"icao": "WABY",
+		"iata": "UGU",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BOMAKIA",
+		"icao": "WAKL",
+		"iata": "BXG",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "EWER",
+		"icao": "WAKG",
+		"iata": "EWE",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BADE",
+		"icao": "WAKE",
+		"iata": "BXD",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KAMUR",
+		"icao": "WAKM",
+		"iata": "KMR",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MANGGELUM",
+		"icao": "WAJT",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BATOM",
+		"icao": "WABM",
+		"iata": "BXM",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KIWIROK",
+		"icao": "WAJK",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "ELELIM",
+		"icao": "WAVE",
+		"iata": "ELR",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "ILU",
+		"icao": "WAVC",
+		"iata": "ILU",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KARUBAGA",
+		"icao": "WABK",
+		"iata": "KBF",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MARARENA - SARMI",
+		"icao": "WAJI",
+		"iata": "ZRM",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "LEREH",
+		"icao": "WAJL",
+		"iata": "LHI",
+		"kategori": "Domestik",
+		"kelas": "Kelas V",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "DABRA",
+		"icao": "WAJC",
+		"iata": "DRH",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "FAWI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SENGGEH",
+		"icao": "WAJS",
+		"iata": "SHE",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "UBRUB",
+		"icao": "WAJU",
+		"iata": "UBR",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "WARIS BARU / TOWE HITAM",
+		"icao": "WAJR",
+		"iata": "WAR",
+		"kategori": "Domestik",
+		"kelas": "Kelas IV",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TOREA",
+		"icao": "WASF",
+		"iata": "FKQ",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "UTAROM / KAIMANA",
+		"icao": "WASK",
+		"iata": "KNG",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "RENDANI",
+		"icao": "WAUU",
+		"iata": "MKW",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BINTUNI",
+		"icao": "WAUB",
+		"iata": "NTI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "IJAHABRA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "WASIOR",
+		"icao": "WAUW",
+		"iata": "WSR",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BABO",
+		"icao": "WASO",
+		"iata": "BXB",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KEBAR",
+		"icao": "WAUK",
+		"iata": "KEQ",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "RANSIKI",
+		"icao": "WASC",
+		"iata": "RSK",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "DOMINE EDUARD OSOK",
+		"icao": "WASS",
+		"iata": "SOQ",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "INANWATAN",
+		"icao": "WASI",
+		"iata": "INX",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TEMINABUAN",
+		"icao": "WAST",
+		"iata": "TMX",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "AYAWASI",
+		"icao": "WASA",
+		"iata": "AYW",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KAMBUAYA",
+		"icao": "WASU",
+		"iata": "KBX",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "WERUR",
+		"icao": "WAJY",
+		"iata": "WRR",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MERDEY",
+		"icao": "WASM",
+		"iata": "RDE",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KUABANG KAO",
+		"icao": "WAMK",
+		"iata": "KAZ",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "OESMAN SADIK",
+		"icao": "WAPH",
+		"iata": "LAH",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "EMALAMO",
+		"icao": "WAPN",
+		"iata": "SQN",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "GAMAR MALAMO",
+		"icao": "WAEG",
+		"iata": "GLX",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SULTAN BABULLAH",
+		"icao": "WAEE",
+		"iata": "TTE",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BULI",
+		"icao": "WAME",
+		"iata": "BLI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "FRANSISKUS XAVERIUS SEDA",
+		"icao": "WATC",
+		"iata": "MOF",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "ALAS LAUSER",
+		"icao": "WIMU",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SANGGU",
+		"icao": "WAGM",
+		"iata": "BTK",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BERINGIN",
+		"icao": "WAOM",
+		"iata": "MTW",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KUALA PEMBUANG",
+		"icao": "WAGF",
+		"iata": "KLP",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TUMBANG SAMBA",
+		"icao": "WAOW",
+		"iata": "TMB",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KUALA KURUN",
+		"icao": "WAGA",
+		"iata": "KLK",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "GUSTI SJAMSIR ALAM",
+		"icao": "WAOK",
+		"iata": "KBU",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MELALAN MELAK",
+		"icao": "WALE",
+		"iata": "MLK",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "LONG APUNG",
+		"icao": "WALQ",
+		"iata": "LPU",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "H. AROEPPALA SELAYAR",
+		"icao": "WAWH",
+		"iata": "KSR",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SEKO",
+		"icao": "WAFN",
+		"iata": "SKO",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "RAMPI",
+		"icao": "WAFK",
+		"iata": "RPI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "H. ASAN-SAMPIT",
+		"icao": "WAGS",
+		"iata": "SMQ",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "JOHN BECKER",
+		"icao": "WATQ",
+		"iata": "KSX",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KALIMARAU",
+		"icao": "WALK",
+		"iata": "BEJ",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "WUNOPITO",
+		"icao": "WATW",
+		"iata": "LWE",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "PITU MOROTAI",
+		"icao": "WAMR",
+		"iata": "OTI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KAREL SADSUITUBUN LANGGUR",
+		"icao": "WAPF",
+		"iata": "LUV",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "NAMNIWEL",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MATHILDA BATLAYERI",
+		"icao": "WAPS",
+		"iata": "SXK",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "WAMENA",
+		"icao": "WAVV",
+		"iata": "WMX",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "NOP GOLIAT DEKAI YAHUKIMO",
+		"icao": "WAVD",
+		"iata": "DEX",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "PEKONSERAI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SUMARORONG",
+		"icao": "WAFS",
+		"iata": "MSA",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MOZES KILANGIN TIMIKA",
+		"icao": "WAYY",
+		"iata": "TIM",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SANGIA NIBANDERA",
+		"icao": "WAWP",
+		"iata": "PUM",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BLANGKEJERAN",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "Ranai - Natuna",
+		"icao": "WION",
+		"iata": "NTX",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "LETUNG",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TAMBELAN",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MUARA BUNGO",
+		"icao": "WIJB",
+		"iata": "MRB",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "ENGGANO",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BAWEAN - HARUN THOHIR",
+		"icao": "WARW",
+		"iata": "BXW",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MARATUA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MIANGAS",
+		"icao": "WAMS",
+		"iata": "IAX",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MOROWALI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TANJUNG API AMPANA",
+		"icao": "WAFU",
+		"iata": "OJU",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BUA / LAGALIGO",
+		"icao": "WAFD",
+		"iata": "LLO",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "ARUNG PALAKKA BONE",
+		"icao": "WAWN",
+		"iata": "BNE",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MATAHORA",
+		"icao": "WAWD",
+		"iata": "WNI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MOA",
+		"icao": "TES",
+		"iata": "MOA",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "GEBE",
+		"icao": "WAMJ",
+		"iata": "GEB",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SEGUN",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MARINDA",
+		"icao": "WASN",
+		"iata": "RJM",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "YAHUKIMO",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BOROME",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BINAKA",
+		"icao": "WIMB",
+		"iata": "GNS",
+		"kategori": "Domestik",
+		"kelas": "Kelas II",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "STEVANUS RUMBEWAS SERUI",
+		"icao": "WABO",
+		"iata": "ZRI",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "DANAU TOBA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MINDIPTANA",
+		"icao": "WAKD",
+		"iata": "MDP",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KOROWAY BATU",
+		"icao": "WAKJ",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "GARUT SELATAN",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "WASIOR BARU",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KAYONG UTARA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KEDIRI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "GADING - WONOSARI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "JEMBER - NOTO HADINEGORO",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MARATUA",
+		"icao": "WAQC",
+		"iata": "RTU",
+		"kategori": "Domestik",
+		"kelas": "Kelas IIIB",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "HAJI MUHAMMAD SIDIK",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SAMARINDA BARU",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "AJI PANGERAN TUMENGGUNG PRANOTO (SAMARINDA BARU)",
+		"icao": "WALS",
+		"iata": "AAP",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "TANA TORAJA BARU (BUNTU KUNIK)",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "KOTA BANGUN",
+		"icao": "-",
+		"iata": "KOD",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "ABDURRAHMAN SALEH",
+		"icao": "WARA",
+		"iata": "MLG",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "LUNYUK",
+		"icao": "WADU",
+		"iata": "LYK",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "JILA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "JITA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "POTOWAI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "BILAI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "KELILA",
+		"icao": "WAJV",
+		"iata": "LLN",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "YURUF",
+		"icao": "-",
+		"iata": "RUF",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "MOLOF",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "ANGGI",
+		"icao": "WASG",
+		"iata": "AGD",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "KUALA BATU",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "NUSAWIRU",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "PINANG KAMPAI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "KOTA BANGUN",
+		"icao": "WAON",
+		"iata": "TJG",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "TEMPULING",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "TEPA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "SINAK",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "BERSUJUD / BATU LICIN",
+		"icao": "WRBC",
+		"iata": "BTW",
+		"kategori": "Domestik",
+		"kelas": "Kelas III",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "SINGKIL/SYEKH HAMZAH FANSURI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "BIREUN",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "MALIKUS SALEH",
+		"icao": "WITM",
+		"iata": "LSW",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "KEPULAUAN MERANTI / BENGKALIS",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "TANJUNG LESUNG",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "JEMBER - NOTO HADINEGORO",
+		"icao": "WARE",
+		"iata": "JBB",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "PALOH",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "MUARA WAHAU",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "TANJUNG BARA / SANGATA",
+		"icao": "WRLJ",
+		"iata": "TJC",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "PASER",
+		"icao": "WALH",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "LONG APARI",
+		"icao": "WAGL",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "LONG LAYU",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "BINUANG",
+		"icao": "WAQG",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "KABARE",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "ABOYAGA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "ABOY",
+		"icao": "-",
+		"iata": "ABY",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "YANIRUMA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "APALAPSILI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "KOBAKMA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "KENYAM",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "TSINGA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "ALAMA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "WANGBE",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "WIRASABA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "PULAU KANGEAN",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "KEPUPALUAN MENTAWAI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "SUKABUMI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "ANGGRUK",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "NGLORAM",
+		"icao": "WARC",
+		"iata": "CPF",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "HOLUWUN",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "NINIA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "PASEMA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "SILIMO",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "SOBAHAM",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "SURU SURU",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "LUBAN",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "LUBAN",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "OKBAB",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "OKLIP",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "OKYOP",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "WANGGEMALO",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "PANTAI SELATAN JAWA TIMUR",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "DUMA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "KAPIRAYA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "KILMIT",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "MAMIT",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "WANAM",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "IWUR",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "KASONAWEJA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "SEKONGKONG",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "HARAPAN MANISMATA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "SANGGOLEDO",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "LUMBIS OGONG",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "BOLAANG MONGONDOW",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "BANGGAI LAUT",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "JOS ORNO / IMSULA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "KERTAJATI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "BUKIT MALINTANG",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "TELUK DALAM",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "SIMALUNGUN",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "PASAMAN BARAT",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "BAGAN SIAPI API",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "PAGAR ALAM",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "KARAWANG",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "MBAY",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "KABIR",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "SINGKAWANG",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "TIRA TANGKA BALANG",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "NANGA BULIK",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "SITARO",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "POHUWATO",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "BUTON UTARA / LANTAGI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "TEPELEO",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "BOBONG",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "WEDA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "MEIDIDGA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "MISOOL / LIMALAS",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "RENI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "DOREKAR",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "BOTAWA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "MAPANDUMA",
+		"icao": "-",
+		"iata": "MAP",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "ABOGE - KAB. MAPPI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "SERADALA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "TAIVE II",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "KOROWAY BATU",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "PARO",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "MUGI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "OKTENENG",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "TERAPLU",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "BIME",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "AMBISIBIL",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "SINILAK",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "BENAWA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "KIRIHI",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "MAMBRAMO RAYA A",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "MAMBRAMO RAYA B",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "WIRIADINATA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Satker",
+		"pengelola": "TNI"
+	},
+	{
+		"nama": "BONTANG (BADAK NGL)",
+		"icao": "WALC",
+		"iata": "BXT",
+		"kategori": "Domestik",
+		"kelas": "Kelas IIIC",
+		"pengelola": "SWASTA"
+	},
+	{
+		"nama": "DOFA BENJINA FALABISAHAYA",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "",
+		"pengelola": "SWASTA"
+	},
+	{
+		"nama": "BINTAN",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Domestik",
+		"kelas": "Kelas I",
+		"pengelola": "SWASTA"
+	},
+	{
+		"nama": "I GUSTI NGURAH RAI",
+		"icao": "WADD",
+		"iata": "DPS",
+		"kategori": "Internasional",
+		"kelas": "Kelas IA",
+		"pengelola": "PT. Angkasa Pura I"
+	},
+	{
+		"nama": "SAM RATULANGI",
+		"icao": "WAMM",
+		"iata": "MDC",
+		"kategori": "Internasional",
+		"kelas": "Kelas IB",
+		"pengelola": "PT. Angkasa Pura I"
+	},
+	{
+		"nama": "SULTAN AJI MUHAMMAD SULAIMAN SEPINGGAN",
+		"icao": "WALL",
+		"iata": "BPN",
+		"kategori": "Internasional",
+		"kelas": "Kelas IA",
+		"pengelola": "PT. Angkasa Pura I"
+	},
+	{
+		"nama": "PATTIMURA",
+		"icao": "WAPP",
+		"iata": "AMQ",
+		"kategori": "Internasional",
+		"kelas": "Kelas IIA",
+		"pengelola": "PT. Angkasa Pura I"
+	},
+	{
+		"nama": "SYAMSUDIN NOOR",
+		"icao": "WAOO",
+		"iata": "BDJ",
+		"kategori": "Internasional",
+		"kelas": "Kelas IB",
+		"pengelola": "PT. Angkasa Pura I"
+	},
+	{
+		"nama": "INTERNASIONAL ADISUTJIPTO AIRPORT",
+		"icao": "WAHH",
+		"iata": "JOG",
+		"kategori": "Internasional",
+		"kelas": "Kelas I",
+		"pengelola": "PT. Angkasa Pura I"
+	},
+	{
+		"nama": "ADI SUMARMO",
+		"icao": "WARQ",
+		"iata": "SOC",
+		"kategori": "Internasional",
+		"kelas": "Kelas IIA",
+		"pengelola": "PT. Angkasa Pura I"
+	},
+	{
+		"nama": "JUANDA",
+		"icao": "WARR",
+		"iata": "SUB",
+		"kategori": "Internasional",
+		"kelas": "Kelas IA",
+		"pengelola": "PT. Angkasa Pura I"
+	},
+	{
+		"nama": "SULTAN HASANUDDIN",
+		"icao": "WAAA",
+		"iata": "UPG",
+		"kategori": "Internasional",
+		"kelas": "Kelas IA",
+		"pengelola": "PT. Angkasa Pura I"
+	},
+	{
+		"nama": "FRANS KAISIEPO",
+		"icao": "WABB",
+		"iata": "BIK",
+		"kategori": "Internasional",
+		"kelas": "Kelas I",
+		"pengelola": "PT. Angkasa Pura I"
+	},
+	{
+		"nama": "JENDERAL AHMAD YANI",
+		"icao": "WARS",
+		"iata": "SRG",
+		"kategori": "Internasional",
+		"kelas": "Kelas IB",
+		"pengelola": "PT. Angkasa Pura I"
+	},
+	{
+		"nama": "EL TARI",
+		"icao": "WATT",
+		"iata": "KOE",
+		"kategori": "Internasional",
+		"kelas": "Kelas IB",
+		"pengelola": "PT. Angkasa Pura I"
+	},
+	{
+		"nama": "LOMBOK PRAYA",
+		"icao": "WADL",
+		"iata": "LOP",
+		"kategori": "Internasional",
+		"kelas": "Kelas IIA",
+		"pengelola": "PT. Angkasa Pura I"
+	},
+	{
+		"nama": "POLONIA",
+		"icao": "WIMM",
+		"iata": "MES",
+		"kategori": "Internasional",
+		"kelas": "Kelas I",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "SULTAN ISKANDAR MUDA",
+		"icao": "WITT",
+		"iata": "BTJ",
+		"kategori": "Internasional",
+		"kelas": "",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "SULTAN SYARIF KASIM II",
+		"icao": "WIBB",
+		"iata": "PKU",
+		"kategori": "Internasional",
+		"kelas": "Kelas I (Utama)",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "SILANGIT",
+		"icao": "WIMN",
+		"iata": "DTB",
+		"kategori": "Internasional",
+		"kelas": "Kelas II",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "HALIM PERDANA KUSUMA",
+		"icao": "WIIH",
+		"iata": "HLP",
+		"kategori": "Internasional",
+		"kelas": "Kelas I",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "SUPADIO",
+		"icao": "WIOO",
+		"iata": "PNK",
+		"kategori": "Internasional",
+		"kelas": "",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "SOEKARNO HATTA",
+		"icao": "WIII",
+		"iata": "CGK",
+		"kategori": "Internasional",
+		"kelas": "Kelas I",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "SULTAN MAHMUD BADARUDDIN II",
+		"icao": "WIPP",
+		"iata": "PLM",
+		"kategori": "Internasional",
+		"kelas": "Kelas I",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "HUSEIN SASTRANEGARA",
+		"icao": "WICC",
+		"iata": "BDO",
+		"kategori": "Internasional",
+		"kelas": "Kelas I",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "MINANGKABAU INTERNASIONAL AIRPORT",
+		"icao": "WIPT",
+		"iata": "PDG",
+		"kategori": "Internasional",
+		"kelas": "Kelas I",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "RAJA HAJI FISABILILLAH",
+		"icao": "WIDN",
+		"iata": "TNJ",
+		"kategori": "Internasional",
+		"kelas": "Kelas I",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "KUALANAMU",
+		"icao": "WIMM",
+		"iata": "KNO",
+		"kategori": "Internasional",
+		"kelas": "",
+		"pengelola": "PT. Angkasa Pura II"
+	},
+	{
+		"nama": "HANG NADIM",
+		"icao": "WIKB",
+		"iata": "BTH",
+		"kategori": "Internasional",
+		"kelas": "Kelas I (Utama)",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "SENTANI",
+		"icao": "WAJJ",
+		"iata": "DJJ",
+		"kategori": "Internasional",
+		"kelas": "Kelas I (Utama)",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "JUWATA",
+		"icao": "WAQQ",
+		"iata": "TRK",
+		"kategori": "Internasional",
+		"kelas": "Kelas I (Utama)",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "MOPAH",
+		"icao": "WAKK",
+		"iata": "MKQ",
+		"kategori": "Internasional",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Ditjen Hubud"
+	},
+	{
+		"nama": "BALI BARU",
+		"icao": "-",
+		"iata": "-",
+		"kategori": "Internasional",
+		"kelas": "Kelas I",
+		"pengelola": "UPT Daerah / Pemda"
+	},
+	{
+		"nama": "SELAPARANG",
+		"icao": "WADA",
+		"iata": "AMI",
+		"kategori": "Internasional",
+		"kelas": "Kelas IIA",
+		"pengelola": "TNI"
+	}
+]
