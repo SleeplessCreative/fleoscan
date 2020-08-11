@@ -1,6 +1,7 @@
 import 'package:fleoscan/app/locator.dart';
 import 'package:fleoscan/services/analytics_service.dart';
 import 'package:fleoscan/ui/setup_dialog_ui.dart';
+import 'package:fleoscan/ui/setup_snackbar_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:stacked_services/stacked_services.dart';
@@ -11,6 +12,7 @@ import 'items/fleocolor.dart';
 void main() {
   setupLocator();
   setupDialogUi();
+  setupSnackbarUi();
   runApp(MyApp());
 }
 
