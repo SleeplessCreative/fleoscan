@@ -40,6 +40,7 @@ class HomeView extends StatelessWidget {
                   Expanded(
                     flex: 10,
                     child: Container(
+                      width: MediaQuery.of(context).size.width * 0.75,
                       child: model.logoFleoscan,
                     ),
                   ),

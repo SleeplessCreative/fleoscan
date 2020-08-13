@@ -27,6 +27,7 @@ class AboutView extends StatelessWidget {
                       child: Container(
                         padding: EdgeInsets.all(10.0),
                         margin: EdgeInsets.all(10.0),
+                        width: MediaQuery.of(context).size.width * 0.85,
                         child: model.logoFleoscan,
                       ),
                     ),
@@ -34,7 +35,7 @@ class AboutView extends StatelessWidget {
                       flex: 4,
                       child: Container(
                           decoration: BoxDecoration(
-                            color: FleoColor.c600(),
+                            color: FleoColor.c100(),
                             boxShadow: [defaultShadow],
                             borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(30),

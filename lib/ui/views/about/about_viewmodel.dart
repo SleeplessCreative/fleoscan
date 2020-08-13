@@ -5,11 +5,10 @@ class AboutViewModel extends BaseViewModel {
   String _title = 'This is title';
   String get title => _title;
 
-  Image _logoFleoscan = Image.asset(
-    'assets/logo_fleo.png',
-    width: 169,
+  Image _logoFleoScan = Image.asset(
+    'assets/airportseclogo2.png',
   );
-  Image get logoFleoscan => _logoFleoscan;
+  Image get logoFleoscan => _logoFleoScan;
 
   String _aboutText = '''
 Version 1.0

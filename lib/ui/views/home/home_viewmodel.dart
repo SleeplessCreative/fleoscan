@@ -1,7 +1,7 @@
 import 'package:fleoscan/app/locator.dart';
 import 'package:fleoscan/services/airlines_service.dart';
 import 'package:fleoscan/services/airports_service.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
 class HomeViewModel extends BaseViewModel {
@@ -19,11 +19,16 @@ class HomeViewModel extends BaseViewModel {
     }
   }
 
-  SvgPicture _logoFleoscan = SvgPicture.asset(
-    'assets/logo-white.svg',
-    height: 169,
+  Image _logoFleoScan = Image.asset(
+    'assets/airportseclogo2.png',
   );
-  SvgPicture get logoFleoscan => _logoFleoscan;
+  Image get logoFleoscan => _logoFleoScan;
+
+  // SvgPicture _logoFleoscan = SvgPicture.asset(
+  //   'assets/logo-white.svg',
+  //   height: 169,
+  // );
+  // SvgPicture get logoFleoscan => _logoFleoscan;
 
   List<String> _hint = [
     'Ketuk',
