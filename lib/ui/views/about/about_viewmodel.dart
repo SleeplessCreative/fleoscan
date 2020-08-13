@@ -14,7 +14,7 @@ class AboutViewModel extends BaseViewModel {
   String _aboutText = '''
 Version 1.0
 
-Copyright (c) 
+Copyright © 
 2020 - Sleeplesscreative
                             ''';
   String get aboutText => _aboutText;

@@ -7,9 +7,10 @@ import 'appbar_viewmodel.dart';
 class AppbarView extends PreferredSize {
   final double height;
   final bool burgerButton;
+  final String title;
 
   @override
-  AppbarView({this.height = kToolbarHeight, this.burgerButton});
+  AppbarView({this.height = kToolbarHeight, this.burgerButton, this.title});
 
   @override
   Size get preferredSize => Size.fromHeight(height);
@@ -26,7 +27,7 @@ class AppbarView extends PreferredSize {
               children: <Widget>[
                 Expanded(
                   child: Text(
-                    model.appbarTitle,
+                    title,
                     style: TextStyle(
                       fontSize: 16.0,
                       fontWeight: FontWeight.w700,

@@ -15,6 +15,7 @@ class ScanView extends StatelessWidget {
         onModelReady: (model) => model.initialise(),
         builder: (context, model, child) => Scaffold(
               appBar: AppbarView(
+                title: 'PINDAI',
                 height: 100,
                 burgerButton: false,
               ),

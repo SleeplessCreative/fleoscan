@@ -18,6 +18,7 @@ class HomeView extends StatelessWidget {
           return Scaffold(
             extendBody: true,
             appBar: AppbarView(
+              title: 'BERANDA',
               height: 100,
               burgerButton: true,
             ),

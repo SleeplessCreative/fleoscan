@@ -15,6 +15,7 @@ class HistoryView extends StatelessWidget {
         onModelReady: (model) => model.initialise(),
         builder: (context, model, child) => Scaffold(
               appBar: AppbarView(
+                title: 'RIWAYAT',
                 height: 100,
                 burgerButton: false,
               ),

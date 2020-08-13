@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 
 class FleoColor {
   static Color c100() {
-    return const Color(0xFFFFCD37);
+    return const Color(0xFFFBCD15);
   }
 
   static Color c200() {
