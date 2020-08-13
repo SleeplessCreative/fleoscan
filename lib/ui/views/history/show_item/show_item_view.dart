@@ -16,7 +16,6 @@ class ShowItemView extends StatelessWidget {
     return ViewModelBuilder<ShowItemViewModel>.reactive(
         builder: (context, model, child) => Scaffold(
               appBar: AppbarView(
-                title: 'DETAIL',
                 height: 100,
                 burgerButton: false,
               ),
